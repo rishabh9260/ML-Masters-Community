@@ -7,5 +7,6 @@ test = pd.read_csv("Test.csv")
 X = df.iloc[:, :-1]
 y = df['target']
 
-model = LinearRegression().fit(X, y)
+model = LinearRegression()
+model.fit(X, y)
 y_predict = model.predict(test)
